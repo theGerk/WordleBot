@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordleIsEasy.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="WOW I can't belive you made this!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="I know, I'm really cool." FontSize="Title" Padding="30,10,30,10"/>
+        <Label x:Name="remaining" Text="" FontSize="16" Padding="30,0,30,0"/>
+
+		<Grid HorizontalOptions="FillAndExpand" x:Name="wordleInput">
+			<Button x:Name="btn1" Text="Hi" Grid.Column="0" Clicked="btnClicked" TextColor="Black"/>
+			<Button x:Name="btn2" Text="Hi" Grid.Column="1" Clicked="btnClicked" TextColor="Black"/>
+			<Button x:Name="btn3" Text="Hi" Grid.Column="2" Clicked="btnClicked" TextColor="Black"/>
+			<Button x:Name="btn4" Text="Hi" Grid.Column="3" Clicked="btnClicked" TextColor="Black"/>
+			<Button x:Name="btn5" Text="Hi" Grid.Column="4" Clicked="btnClicked" TextColor="Black"/>
+		</Grid>
+		<StackLayout VerticalOptions="CenterAndExpand"/>
+		<Button x:Name="submit" HeightRequest="100" Text="Submit" Clicked="submit_Clicked"/>
+	</StackLayout>
+
+</ContentPage>
