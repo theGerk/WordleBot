@@ -15,7 +15,9 @@ namespace WordleIsEasy
 		static Color EXIST_NOT_MATCH => Color.Yellow;
 		static Color CORRECT => Color.Green;
 
-		private BestWord bestWord = new BestWord("olate", Words.probableWords.GroupBy(x => Class1.compareWords("olate", x)).ToList());
+		//private BestWord bestWord = new BestWord("olate", Words.probableWords.GroupBy(x => Class1.compareWords("olate", x)).ToList());
+		private BestWord bestWord = new BestWord("seria", Words.words.GroupBy(x => Class1.compareWords("seria", x)).ToList());
+
 
 		private void setWords(int number)
 		{
@@ -26,7 +28,8 @@ namespace WordleIsEasy
 		{
 			InitializeComponent();
 			initButtons();
-			setWords(Words.probableWords.Count());
+			//setWords(Words.probableWords.Count());
+			setWords(Words.words.Length);
         }
 
 		private void renderWord(string word)
